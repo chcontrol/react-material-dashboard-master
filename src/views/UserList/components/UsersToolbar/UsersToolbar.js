@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
 import { Button } from '@material-ui/core';
-
+import { Link as RouterLink, withRouter } from 'react-router-dom';
+import {  Link} from '@material-ui/core';
 import { SearchInput } from 'components';
 
 const useStyles = makeStyles(theme => ({
@@ -42,12 +43,19 @@ const UsersToolbar = props => {
         <span className={classes.spacer} />
         <Button className={classes.importButton}>Import</Button>
         <Button className={classes.exportButton}>Export</Button>
-        <Button
+        
+        <Link
+                    component={RouterLink}
+                    to="/sign-up"
+                    variant="h6"
+                  >
+                    <Button
           color="primary"
           variant="contained"
         >
           Add user
         </Button>
+        </Link>
       </div>
       <div className={classes.row}>
         <SearchInput

@@ -27,9 +27,10 @@ const Main = props => {
 
   const classes = useStyles();
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up('lg'), {
+  const isDesktop2 = useMediaQuery(theme.breakpoints.up('lg'), {
     defaultMatches: true
   });
+  const isDesktop = false;
 
   const [openSidebar, setOpenSidebar] = useState(false);
 

@@ -66,7 +66,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: 'url(/images/auth.jpg)',
+    backgroundImage: 'url(/images/register.jpg)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
@@ -210,21 +210,20 @@ const SignUp = props => {
                 className={classes.quoteText}
                 variant="h1"
               >
-                Hella narwhal Cosby sweater McSweeney's, salvia kitsch before
-                they sold out High Life.
+                 Sahathai Steel pipe 
               </Typography>
               <div className={classes.person}>
                 <Typography
                   className={classes.name}
                   variant="body1"
                 >
-                  Takamaru Ayako
+                  Sahathai Steel pipe
                 </Typography>
                 <Typography
                   className={classes.bio}
                   variant="body2"
                 >
-                  Manager at inVision
+                  Sahathai Steel pipe
                 </Typography>
               </div>
             </div>

@@ -17,6 +17,9 @@ const useStyles = makeStyles(theme => ({
   },
   signOutButton: {
     marginLeft: theme.spacing(1)
+  },
+  link:{
+    color: "#FFF"
   }
 }));
 
@@ -33,11 +36,16 @@ const Topbar = props => {
       className={clsx(classes.root, className)}
     >
       <Toolbar>
-        <RouterLink to="/">
-          <img
-            alt="Logo"
-            src="/images/logos/logo--white.svg"
-          />
+      <Hidden >
+          <IconButton
+            color="inherit"
+            onClick={onSidebarOpen}
+          >
+            <MenuIcon />
+          </IconButton>
+        </Hidden>
+        <RouterLink to="/" className={classes.link}>
+              <h2>Sahathai Steel pipe</h2>
         </RouterLink>
         <div className={classes.flexGrow} />
         <Hidden mdDown>
@@ -57,14 +65,7 @@ const Topbar = props => {
             <InputIcon />
           </IconButton>
         </Hidden>
-        <Hidden lgUp>
-          <IconButton
-            color="inherit"
-            onClick={onSidebarOpen}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Hidden>
+        
       </Toolbar>
     </AppBar>
   );
